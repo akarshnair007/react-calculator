@@ -1,0 +1,88 @@
+/* Calculator.css */
+
+body {
+  background: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.cal_body {
+  background: linear-gradient(to right, #4a90e2, rgba(0, 0, 0, 0.2));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.output_section {
+  background: rgba(0, 0, 0, 0.3);
+  width: fit-content;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: right;
+  font-size: 24px;
+  color: white;
+  min-width: 180px; /* Adjust as needed */
+  min-height: 40px; /* Adjust the height as needed */
+}
+
+.type_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.col_number {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.col_symbol {
+  background-color: #f06292;
+  color: white;
+}
+
+.col_equals {
+  background-color: #ffca28;
+  color: #333;
+}
+.col_del {
+  background-color: #f06292; /* Light red matching background color */
+  color: white;
+}
+
+.col_del:hover {
+  background-color: #e53935; /* Slightly darker red on hover */
+}
+button:hover {
+  background-color: #3d77b7;
+}
+
+button:active {
+  transform: scale(0.95);
+}
